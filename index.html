@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Category tabs</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="containerall">
+
+
+        <div class="head">Select your Choice </div>
+        <br>
+
+        <div class="tab-container">
+
+            <div class="men" onclick="showTab('Men')"> Men</div>
+            <div class="women" onclick="showTab('Women')">Women</div>
+            <div class="kids" onclick="showTab('Kids')">Kids</div>
+        </div>
+        <br>
+
+        <div class="container">
+            <div id="Men" class="product-card"></div>
+        </div>
+        <div class="container">
+            <div id="Women" class="product-card"></div>
+        </div>
+        <div class="container">
+            <div id="Kids" class="product-card"></div>
+        </div>
+
+        <!-- <span  class="emoji" >  <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJjb2xvcjpjdXJyZW50Q29sb3IiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgY2xhc3M9ImgtZnVsbCB3LWZ1bGwiPjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiB4PSIwIiB5PSIwIiByeD0iMzAiIGZpbGw9InRyYW5zcGFyZW50IiBzdHJva2U9InRyYW5zcGFyZW50IiBzdHJva2Utd2lkdGg9IjAiIHN0cm9rZS1vcGFjaXR5PSIxMDAlIiBwYWludC1vcmRlcj0ic3Ryb2tlIj48L3JlY3Q+PHN2ZyB3aWR0aD0iMjU2cHgiIGhlaWdodD0iMjU2cHgiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0iY3VycmVudENvbG9yIiB4PSIxMjgiIHk9IjEyOCIgcm9sZT0iaW1nIiBzdHlsZT0iZGlzcGxheTppbmxpbmUtYmxvY2s7dmVydGljYWwtYWxpZ246bWlkZGxlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9ImN1cnJlbnRDb2xvciI+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNOS42MDggMTQuNTYzYy41MjEtLjE4NSAxLjI2OC0uMzI2IDIuMjU1LS4yMzNhLjUuNSAwIDEgMCAuMDk0LS45OTZjLTEuMTMzLS4xMDYtMi4wMjYuMDUzLTIuNjg1LjI4N2EuNS41IDAgMSAwIC4zMzYuOTQyWm0xMi41Ny0uOTQyYy0uNjYtLjIzNC0xLjU1Mi0uMzkzLTIuNjg1LS4yODdhLjUuNSAwIDEgMCAuMDk0Ljk5NmMuOTg3LS4wOTMgMS43MzQuMDQ4IDIuMjU1LjIzM2EuNS41IDAgMCAwIC4zMzYtLjk0MlpNMTEuMiAxNS41M2MtMS40NSAwLTIuNjcgMS0zLjAxIDIuMzRjLS4xLjM4LjIuNzUuNi43NWguOTU4YTEuOTg1IDEuOTg1IDAgMCAxIDEuOTEyLTIuNWExLjk4NSAxLjk4NSAwIDAgMSAxLjkxMyAyLjVoLjE1N2MuMzIgMCAuNTctLjI5LjUxLS42YTMuMDkzIDMuMDkzIDAgMCAwLTMuMDQtMi40OVptOS42MiAwYzEuNDUgMCAyLjY3IDEgMy4wMSAyLjM0Yy4xLjM4LS4yLjc1LS42Ljc1aC0uOTU4YTEuOTg1IDEuOTg1IDAgMCAwLTEuOTEyLTIuNWExLjk4NSAxLjk4NSAwIDAgMC0xLjkxMyAyLjVoLS4xNTdjLS4zMiAwLS41Ny0uMjktLjUxLS42YTMuMDkzIDMuMDkzIDAgMCAxIDMuMDQtMi40OVoiPjwvcGF0aD48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0xOS40MjkgMTcuNDU5YTEuMTI0IDEuMTI0IDAgMCAwLS4xOTkuNjQxYzAgLjE5LjA1LjM3LjEzLjUzaDJhMS4xMjkgMS4xMjkgMCAwIDAtMS4zOTgtMS41ODhhLjM1LjM1IDAgMSAxLS41MzMuNDE3Wm0tNi42MzkuNjQxYTEuMTI5IDEuMTI5IDAgMCAwLTEuNTc1LTEuMDRhLjM0OS4zNDkgMCAwIDEtLjIzNS42MWEuMzUuMzUgMCAwIDEtLjI4OS0uMTUyYTEuMTMgMS4xMyAwIDAgMC0uMDMxIDEuMTEyaDJjLjA4LS4xNi4xMy0uMzQuMTMtLjUzWm0zLjIwMyAzLjljLjY4IDAgMS4yNy0uMzQ1IDEuNjMtLjg3M2MuMzItLjQ3Ny0uMDItMS4xMjctLjU5LTEuMTI3aC0yLjA3Yy0uNTcgMC0uOTEuNjUtLjU5IDEuMTI3Yy4zNS41MjguOTUuODczIDEuNjIuODczWm0uMDA5IDEuMTc0YTYuNDczIDYuNDczIDAgMCAxLTMuMDE2LS43MzNhLjMyOC4zMjggMCAwIDAtLjQyOS40NzJhNC4xIDQuMSAwIDAgMCAzLjQ0NSAxLjg4N2E0LjEgNC4xIDAgMCAwIDMuNDQ1LTEuODg3Yy4xOC0uMjgxLS4xMy0uNjIyLS40My0uNDcyYTYuMzU0IDYuMzU0IDAgMCAxLTMuMDE1LjczM1oiPjwvcGF0aD48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0yNS4xMDcgNC43MjZjLjI0Ni41NS42ODguOTggMS4yMzggMS4yYTQuMDggNC4wOCAwIDAgMSAyLjUzNCAzLjg5MmE0LjA5MyA0LjA5MyAwIDAgMS0xLjAzMiAyLjYzMmEyLjk3IDIuOTcgMCAwIDAtLjY3IDEuMjg5YTQuMjUxIDQuMjUxIDAgMCAxLS4zNzIgOC4xMzRDMjUuODY1IDI3LjM4IDIxLjM1OSAzMSAxNi4wMDUgMzFjLTUuMzU1IDAtOS44Ni0zLjYyMi0xMC44LTkuMTNhNC4yNTEgNC4yNTEgMCAwIDEtLjM5LTguMTIybC0uMDU4LTEuNzE4Yy0uMTc2LTQuMzM2IDIuODQ3LTguMDM4IDYuOTI3LTguODZhNC40MjYgNC40MjYgMCAwIDEgMi44NTUtMS4xNzZjLjk1My0uMDMgMS44MzYuMjUgMi41NzMuNzRjLjQ0Mi4zIDEuMDIyLjMgMS40NjQgMGMuNzM2LS40OSAxLjYzLS43NyAyLjU4My0uNzRjMS43NjguMDYgMy4yOCAxLjE3MSAzLjk0OCAyLjczMlpNNi43NiAxMi4wNzNsLjA4MiAyLjQxOGExIDEgMCAwIDEtLjg3NSAxLjAyN2EyLjI1IDIuMjUgMCAwIDAgLjE3MyA0LjQ4YTEgMSAwIDAgMSAuOTQ3Ljg5MkM3LjYxMiAyNS43OTIgMTEuNDEgMjkgMTYuMDA1IDI5YzQuNTk1IDAgOC4zOTMtMy4yMDggOC45MTgtOC4xMWExIDEgMCAwIDEgLjk1LS44OTJhMi4yNSAyLjI1IDAgMCAwIC4xNDctNC40ODRhMSAxIDAgMCAxLS44OS0xLjA0bC4wOTMtMi4wNDJhMi4xNTIgMi4xNTIgMCAwIDAtMS4yODUtLjQyM0gxOC44NmE2LjYzIDYuNjMgMCAwIDEtNS4zMTMtMi42ODFhLjIwNi4yMDYgMCAwIDAtLjEwOC0uMDhoLS4xMjhhLjIwNy4yMDcgMCAwIDAtLjE1Ny4yMXYxLjczYS44MTcuODE3IDAgMCAxLS44MDYuODIxYy0xLjcyOCAwLTMuMjAxLTEuMS0zLjgxLTIuNjQxYS4xNzYuMTc2IDAgMCAwLS4yMTYtLjExYS4xOC4xOCAwIDAgMC0uMTM4LjE1Yy0uMTU3LjkzLS41OSAxLjc5LTEuMjI4IDIuNDUxYy0uMDY4LjA3LS4xMzQuMTQyLS4xOTYuMjE0WiI+PC9wYXRoPjwvZz48L3N2Zz48L3N2Zz4=" alt="boy" style="color:currentColor"></img></span> -->
+
+
+
+        <!-- <div class="container">
+        <a href="https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code/blob/main/Readme.md" target="_blank">Read how to work with boilerplate</a>
+    </div> -->
+        <!-- Happy coding 😊 -->
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

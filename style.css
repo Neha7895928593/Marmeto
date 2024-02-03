@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+
+
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+
+  background: linear-gradient(to right bottom, #873572, black);
+}
+
+.containerall {
+  width: 400px;
+  height: 350px;
+  margin-top: 150px;
+
+  background: #FFFFFF;
+
+
+
+}
+
+.tab-container {
+
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  top: 54px;
+
+
+
+}
+
+
+
+.men {
+  width: 100px;
+  height: 20px;
+  top: 54px;
+  left: 50px;
+  border-radius: 2px;
+  cursor: pointer;
+  background-color: #ccc;
+
+
+}
+
+.women {
+  width: 100px;
+  height: 20px;
+  top: 54px;
+  left: 150px;
+  border-radius: 2px;
+  cursor: pointer;
+  background-color: #ccc;
+
+}
+
+.kids {
+  width: 100px;
+  height: 20px;
+  top: 54px;
+  left: 250px;
+  border-radius: 2px;
+  cursor: pointer;
+  background-color: #ccc;
+
+}
+
+.men:hover,
+.women:hover,
+.kids:hover {
+  background-color: black;
+  /* Change background color on hover */
+  color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.men:active {
+  transform: scale(0.98);
+}
+
+/* .men {
+
+  width: 100px;
+height: 20px;
+top: 54px;
+left: 50px;
+border-radius: 2px; */
+
+
+
+
+/* cursor: pointer;
+  padding: 10px 20px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 5px; */
+/* background: #000000;
+  border: 1px solid #000000
+  /* width: 126.02px;
+  top: -135px;
+  left: -362px;
+  border: 1px; */
+
+
+
+
+/* .tab-container .kids{
+  width: 18px;
+height: 10px;
+top: 58px;
+left: 292px;
+font-family: Inter;
+font-size: 8px;
+font-weight: 600;
+line-height: 10px;
+letter-spacing: 0em;
+text-align: left;
+color: #000000;
+
+
+
+} */
+.emoji {
+  width: 8px;
+  height: 8px;
+
+}
+
+/* .tab-container .women{
+  width: 30px;
+height: 10px;
+top: 58px;
+left: 186px;
+font-family: Inter;
+font-size: 8px;
+font-weight: 600;
+line-height: 10px;
+letter-spacing: 0em;
+text-align: left;
+color: #000000;
+
+
+} */
+
+.container {
+  width: Hug (370px);
+  height: Hug (143px);
+  top: 90px;
+
+  gap: 6px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+
+
+
+
+}
+
+
+
+
+
+.product-card img {
+
+  width: 88px;
+  height: 100px;
+  border-radius: 2px;
+
+
+
+}
+
+
+.add-to-cart-btn {
+
+  cursor: pointer;
+  width: 88px;
+  /* height: 15px; */
+  top: 128px;
+  border-radius: 2px;
+  background-color: black;
+  color: #ccc;
+  font-weight: 400;
+
+}
+ 
+
+.head {
+  width: 158px;
+  height: 17px;
+  top: 25px;
+  margin-left: 121px;
+  font-family: Khula;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: black;
+
+
+}
+
+
+
+a {
+  display: inline-block;
+  color: lightgrey;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  white-space: nowrap;
+  padding: 12px;
+  border: 1px solid white;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.23);
+  color: white;
+  transform: scale(1.03);
+  text-decoration: none;
+}
+
+a:active {
+  transform: scale(0.98);
+}
